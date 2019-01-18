@@ -1,0 +1,130 @@
+@charset "UTF-8";
+html {font-size:16px;}
+body {
+    padding:0;
+    margin:0;
+    font-family:TrebuchetMS,Arial,sans-serif;
+}
+#container {
+    margin:0 auto;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    text-align:center;
+    overflow:hidden;
+}
+.nightmode {
+    background-color:#121212;
+    background-image: linear-gradient(to bottom left, #121212 10%,#333955 100%);
+    color:#fff;
+    text-shadow:1px 1px 1px black;
+}
+.daymode {
+    background-color: #87ceeb;
+    background-image: linear-gradient(to bottom left, #87ceeb 0%,#fff 100%);
+    color:#333;
+    text-shadow:1px 1px 10px white;
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+    /*.daymode {*/
+        /*background-color: #003;*/
+        /*background-image: linear-gradient(to bottom left, #003 0%,#fff 100%);*/
+        /*color:#ffc;*/
+        /*text-shadow:1px 1px 10px black;*/
+    /*}*/
+/*}*/
+.santamode {
+    background-color: #0f3;
+    background-image: linear-gradient(to bottom left, #0f3 0%,#fff 100%);
+    color:#c00;
+    text-shadow:1px 1px 10px white;
+}
+.clocktext {
+    display:block;
+    margin:0;
+    padding:1px 0 0 0;
+    width:100%;
+    text-align:center;
+    line-height:1.0;
+    white-space:nowrap;
+}
+#date {
+    font-size:1.3rem;
+    padding-top:15px;
+}
+#time {
+    font-size:5rem;
+    margin:1px 0 0 0;
+}
+#time span {
+    display:inline-block;
+    padding:0;
+    vertical-align: baseline;
+    text-align:left;
+    width: 2em;
+    margin:0 0 0 0.5em;
+    font-size:1.5rem;
+    line-height:1.5;
+    white-space:normal;
+}
+.infotext {
+    margin:0;
+    padding:0 5px 0 5px;
+    font-size:1.3rem;
+    line-height:1.4;
+    width:auto;
+
+}
+#weather {display:block;width:auto;}
+#icon {
+    display:inline-block;
+    opacity:0;
+    vertical-align:top;
+    width:auto;
+}
+#gpsbutton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display:block;
+    margin:0 auto;
+    padding:0 16px 0 16px;
+    width:auto;
+    height:40px;
+    border:2px outset #fff;
+    border-radius:12px;
+    background:#dedeff;
+    color:black;
+    font-size:20px;
+    cursor:pointer;
+}
+#gpsbutton:hover {
+    background:#000033;
+    border:2px inset #fff;
+    color:#fff;
+}
+@media (min-width: 480px){
+    #date {font-size:2rem;}
+    #time {font-size:8rem;}
+    #time span {
+        font-size:2rem;
+        line-height: 2;
+    }
+    .infotext {
+        font-size:1.8rem;
+    }
+    #weather {display:inline-block;}
+}
+@media (min-width: 1000px){
+    #icon {height:100px;width:100px;}
+    #date {font-size:4rem;}
+    #time {font-size:16rem;}
+    #time span {
+        font-size:4rem;
+        line-height: 2;
+    }
+    .infotext {
+        font-size:3.6rem;
+    }
+    #weather {display:inline-block;}
+}

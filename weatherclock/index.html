@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="manifest" href="manifest.json">
+	<link rel="apple-touch-icon" sizes="48x48" href="icons/launcher-icon-1x.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="icons/launcher-icon-2x.png">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/launcher-icon-128.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icons/launcher-icon-152.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="icons/launcher-icon-4x.png">
+	<title>GPS Weather Clock by ShearSpire Media</title>
+
+	<script src="clock.js"></script>
+	<link rel="stylesheet" type="text/css" href="clock.css">
+</head>
+<body>
+<main id="container" class="daymode">
+	<time id="date" class="clocktext"></time>
+	<time id="time" class="clocktext"></time>
+	<button id="gpsbutton">Get Location and Weather</button>
+	<div id="weather" class="clocktext infotext"></div>
+	<img id="icon" src="https://openweathermap.org/img/w/01n.png" alt="weather icon"/>
+	<div id="gps" class="clocktext infotext"></div>
+</main>
+</body>
+</html>
